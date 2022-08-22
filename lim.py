@@ -3,11 +3,12 @@ Primary module for interacting with the lim package
 '''
 
 import numpy as np
-import source.params as params_file
-from source.line_model import LineModel
-from source.line_obs import LineObs
+#import .source.params as params_file
+from .source import params as params_file
+from .source.line_model import LineModel
+from .source.line_obs import LineObs
 #from limlam import LimLam, set_sim_cosmo
-from source.tools._utils import get_default_params,check_invalid_params
+from .source.tools._utils import get_default_params,check_invalid_params
 
 
 def lim(model_params='default_par',doObs=True,doSim=False,match_sim_cosmo=True):

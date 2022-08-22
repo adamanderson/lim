@@ -8,9 +8,9 @@ import astropy.constants as cu
 from scipy.interpolate import interp1d
 from scipy.special import legendre
 
-from source.line_model import LineModel
-from source.tools._utils import cached_obs_property,cached_vid_property,get_default_params
-from source.tools._utils import ulogspace, ulinspace,check_params,log_interp1d
+from .line_model import LineModel
+from .tools._utils import cached_obs_property,cached_vid_property,get_default_params
+from .tools._utils import ulogspace, ulinspace,check_params,log_interp1d
 
 class LineObs(LineModel):
     '''

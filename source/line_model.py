@@ -26,14 +26,19 @@ if NoCamb and NoClass:
     raise ValueError('You need to have either camb or class installed to run lim.')
 
 
-from source.tools._utils import cached_property,cached_cosmo_property,cached_vid_property,get_default_params,check_params
-from source.tools._utils import check_model,check_bias_model,check_halo_mass_function_model,add_vector
-from source.tools._utils import log_interp1d,ulogspace,ulinspace,check_invalid_params,merge_dicts,lognormal
-import source.tools._vid_tools as vt
-import source.luminosity_functions as lf
-import source.mass_luminosity as ml
-import source.bias_fitting_functions as bm
-import source.halo_mass_functions as HMF
+from .tools._utils import cached_property,cached_cosmo_property,cached_vid_property,get_default_params,check_params
+from .tools._utils import check_model,check_bias_model,check_halo_mass_function_model,add_vector
+from .tools._utils import log_interp1d,ulogspace,ulinspace,check_invalid_params,merge_dicts,lognormal
+# import .tools._vid_tools as vt
+# import .luminosity_functions as lf
+# import .mass_luminosity as ml
+# import .bias_fitting_functions as bm
+# import .halo_mass_functions as HMF
+from .tools import _vid_tools as vt
+from . import luminosity_functions as lf
+from . import mass_luminosity as ml
+from . import bias_fitting_functions as bm
+from . import halo_mass_functions as HMF
 
 class LineModel(object):
     '''

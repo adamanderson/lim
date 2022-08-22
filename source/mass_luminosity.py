@@ -723,8 +723,8 @@ def process_fq():
     for i in range(len(inds)):
         names.append(files[inds[i]])
     
-    for ia in range(len(a)):  
-        data = np.genfromtxt('tables/qf/'+names[ia])
+    for ia in range(len(a)):
+        data = np.genfromtxt(os.path.join(SFR_folder, 'qf/'+names[ia]))
         mat[:,ia] = data[:,1]
         
         

@@ -8,9 +8,10 @@ import scipy as sp
 import astropy.units as u
 from astropy.cosmology import FlatLambdaCDM
 
-from source.line_obs import LineObs
-from source.tools._utils import cached_property,get_default_params,check_params,check_model
-import source.tools._vid_tools as vt
+from .line_obs import LineObs
+from .tools._utils import cached_property,get_default_params,check_params,check_model
+#import .source.tools._vid_tools as vt
+from .tools import _vid_tools as vt
 
 import limlam_mocker.limlam_mocker as llm
 from limlam_mocker.limlam_mocker.tools import *

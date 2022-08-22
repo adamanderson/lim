@@ -6,10 +6,10 @@ from astropy.units.quantity import Quantity
 import inspect
 import astropy.units as u
 
-import source.luminosity_functions as lf
-import source.mass_luminosity as ml
-import source.bias_fitting_functions as bm
-import source.halo_mass_functions as HMF
+import lim.source.luminosity_functions as lf
+import lim.source.mass_luminosity as ml
+import lim.source.bias_fitting_functions as bm
+import lim.source.halo_mass_functions as HMF
 
 from scipy.interpolate import interp1d
 
