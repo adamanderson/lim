@@ -43,6 +43,11 @@ Using the simulation functionality requires peak-patch catalogs.  One example ca
 
 Finally, lim uses the python camb or class wrapper to compute all needed cosmological quantities. 
 
+Install dependencies:
+```
+pip install tqdm astropy
+```
+
 ### Quickstart
 
 After adding the lim folder to your python path, you can quickly get the default CO power spectrum by running in an interpreter
